@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How do you create a list in Python?",
+    "answer": "Use square brackets: my_list = [1, 2, 3] or list() constructor: my_list = list()"
+  },
+  {
+    "question": "What is a dictionary in Python?",
+    "answer": "A collection of key-value pairs: my_dict = {'key': 'value', 'name': 'John'}"
+  },
+  {
+    "question": "How do you define a function in Python?",
+    "answer": "Use the 'def' keyword:\ndef my_function(param):\n    return param * 2"
+  },
+  {
+    "question": "What is a list comprehension?",
+    "answer": "A concise way to create lists:\nsquares = [x**2 for x in range(10)]"
+  },
+  {
+    "question": "How do you handle exceptions in Python?",
+    "answer": "Use try-except blocks:\ntry:\n    # code\nexcept Exception as e:\n    # handle error"
+  },
+  {
+    "question": "What is the difference between '==' and 'is'?",
+    "answer": "'==' checks value equality, 'is' checks object identity (same object in memory)"
+  },
+  {
+    "question": "How do you create a class in Python?",
+    "answer": "Use the 'class' keyword:\nclass MyClass:\n    def __init__(self, value):\n        self.value = value"
+  },
+  {
+    "question": "What is a lambda function?",
+    "answer": "An anonymous function: lambda x: x * 2\nUsed for short, simple operations"
+  },
+  {
+    "question": "How do you import a module in Python?",
+    "answer": "import module_name\nor\nfrom module_name import specific_function"
+  },
+  {
+    "question": "What is the difference between append() and extend()?",
+    "answer": "append() adds a single element, extend() adds multiple elements from an iterable"
+  },
+  {
+    "question": "How do you create a virtual environment?",
+    "answer": "python -m venv env_name\nThen activate with: source env_name/bin/activate (Linux/Mac) or env_name\\Scripts\\activate (Windows)"
+  },
+  {
+    "question": "What are *args and **kwargs?",
+    "answer": "*args allows variable number of positional arguments, **kwargs allows variable number of keyword arguments"
+  },
+  {
+    "question": "How do you read a file in Python?",
+    "answer": "with open('file.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "answer": "A function that modifies another function:\n@decorator\ndef func():\n    pass"
+  },
+  {
+    "question": "How do you create a string in Python?",
+    "answer": "Use single, double, or triple quotes:\ns = 'hello' or s = \"hello\" or s = '''multi-line'''"
+  }
+]
