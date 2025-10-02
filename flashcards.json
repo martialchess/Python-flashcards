@@ -1,62 +1,2437 @@
 [
   {
-    "question": "How do you create a list in Python?",
-    "answer": "Use square brackets: my_list = [1, 2, 3] or list() constructor: my_list = list()"
+    "topic": "Advanced",
+    "question": "How do you write a generator function?",
+    "answer": "def gen():\n    yield 1"
   },
   {
-    "question": "What is a dictionary in Python?",
-    "answer": "A collection of key-value pairs: my_dict = {'key': 'value', 'name': 'John'}"
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
   },
   {
-    "question": "How do you define a function in Python?",
-    "answer": "Use the 'def' keyword:\ndef my_function(param):\n    return param * 2"
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
   },
   {
-    "question": "What is a list comprehension?",
-    "answer": "A concise way to create lists:\nsquares = [x**2 for x in range(10)]"
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
   },
   {
-    "question": "How do you handle exceptions in Python?",
-    "answer": "Use try-except blocks:\ntry:\n    # code\nexcept Exception as e:\n    # handle error"
+    "topic": "Data Types",
+    "question": "How do you check the type of a set variable?",
+    "answer": "type(x)"
   },
   {
-    "question": "What is the difference between '==' and 'is'?",
-    "answer": "'==' checks value equality, 'is' checks object identity (same object in memory)"
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
   },
   {
-    "question": "How do you create a class in Python?",
-    "answer": "Use the 'class' keyword:\nclass MyClass:\n    def __init__(self, value):\n        self.value = value"
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
   },
   {
-    "question": "What is a lambda function?",
-    "answer": "An anonymous function: lambda x: x * 2\nUsed for short, simple operations"
+    "topic": "Data Types",
+    "question": "How do you check the type of a list variable?",
+    "answer": "type(x)"
   },
   {
-    "question": "How do you import a module in Python?",
-    "answer": "import module_name\nor\nfrom module_name import specific_function"
+    "topic": "Strings",
+    "question": "How do you get the length of string s?",
+    "answer": "len(s)"
   },
   {
-    "question": "What is the difference between append() and extend()?",
-    "answer": "append() adds a single element, extend() adds multiple elements from an iterable"
-  },
-  {
-    "question": "How do you create a virtual environment?",
-    "answer": "python -m venv env_name\nThen activate with: source env_name/bin/activate (Linux/Mac) or env_name\\Scripts\\activate (Windows)"
-  },
-  {
-    "question": "What are *args and **kwargs?",
-    "answer": "*args allows variable number of positional arguments, **kwargs allows variable number of keyword arguments"
-  },
-  {
-    "question": "How do you read a file in Python?",
-    "answer": "with open('file.txt', 'r') as f:\n    content = f.read()"
-  },
-  {
+    "topic": "Advanced",
     "question": "What is a decorator in Python?",
-    "answer": "A function that modifies another function:\n@decorator\ndef func():\n    pass"
+    "answer": "A function that wraps another function to extend behavior"
   },
   {
-    "question": "How do you create a string in Python?",
-    "answer": "Use single, double, or triple quotes:\ns = 'hello' or s = \"hello\" or s = '''multi-line'''"
+    "topic": "Lists",
+    "question": "How do you sort a list nums in ascending order?",
+    "answer": "nums.sort()"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Exceptions",
+    "question": "How do you raise an exception manually?",
+    "answer": "raise ValueError('error message')"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a str variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Lists",
+    "question": "How do you get the last item of a list?",
+    "answer": "nums[-1]"
+  },
+  {
+    "topic": "OOP",
+    "question": "How do you inherit class Student from Person?",
+    "answer": "class Student(Person): ..."
+  },
+  {
+    "topic": "Dictionaries",
+    "question": "How do you iterate over keys and values in a dict?",
+    "answer": "for k, v in d.items(): ..."
+  },
+  {
+    "topic": "Variables",
+    "question": "What keyword is used to define a constant in Python?",
+    "answer": "Python has no true constants, by convention constants are uppercase like MY_VAR = 10"
+  },
+  {
+    "topic": "OOP",
+    "question": "How do you define a class Person?",
+    "answer": "class Person:\n    def __init__(self): ..."
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a float variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Functions",
+    "question": "How do you define a function foo with no arguments?",
+    "answer": "def foo(): ..."
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a bool variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Dictionaries",
+    "question": "How do you safely get value of key 'a' in dict d?",
+    "answer": "d.get('a')"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Advanced",
+    "question": "How do you use a context manager for files?",
+    "answer": "with open('file.txt') as f: ..."
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Lists",
+    "question": "How do you append 10 to list nums?",
+    "answer": "nums.append(10)"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a tuple variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Lists",
+    "question": "How do you create a list of numbers 0 through 9?",
+    "answer": "list(range(10))"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Loops",
+    "question": "How do you write a while loop that runs while x < 10?",
+    "answer": "while x < 10: ..."
+  },
+  {
+    "topic": "Strings",
+    "question": "How do you make a string lowercase?",
+    "answer": "s.lower()"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Loops",
+    "question": "How do you iterate with index and value over a list?",
+    "answer": "for i, val in enumerate(nums): ..."
+  },
+  {
+    "topic": "Strings",
+    "question": "How do you join a list of words with spaces?",
+    "answer": "' '.join(words)"
+  },
+  {
+    "topic": "Variables",
+    "question": "How do you assign 5 to variable x?",
+    "answer": "x = 5"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Functions",
+    "question": "How do you specify default arguments in a function?",
+    "answer": "def foo(x=10): ..."
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Strings",
+    "question": "How do you split a string by spaces?",
+    "answer": "s.split()"
+  },
+  {
+    "topic": "Strings",
+    "question": "How do you replace 'a' with 'b' in string s?",
+    "answer": "s.replace('a', 'b')"
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a int variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Loops",
+    "question": "How do you write a for loop over list nums?",
+    "answer": "for n in nums: print(n)"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Dictionaries",
+    "question": "How do you get value of key 'a' in dict d?",
+    "answer": "d['a']"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Functions",
+    "question": "How do you return a value from a function?",
+    "answer": "return value"
+  },
+  {
+    "topic": "Data Types",
+    "question": "How do you check the type of a dict variable?",
+    "answer": "type(x)"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Variables",
+    "question": "How do you swap two variables a and b?",
+    "answer": "a, b = b, a"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is equal to y?",
+    "answer": "x == y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if key k exists in dict d?",
+    "answer": "k in d"
+  },
+  {
+    "topic": "Exceptions",
+    "question": "How do you handle exceptions in Python?",
+    "answer": "try: ... except Exception as e: ..."
+  },
+  {
+    "topic": "OOP",
+    "question": "How do you create an object p from class Person?",
+    "answer": "p = Person()"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is not equal to y?",
+    "answer": "x != y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check if x is greater than y?",
+    "answer": "x > y"
+  },
+  {
+    "topic": "Booleans",
+    "question": "How do you check membership of 'a' in list l?",
+    "answer": "'a' in l"
+  },
+  {
+    "question": "What is the purpose of the ____str____ method?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the datetime module to get the current date?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What exception is raised by the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the output of the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How do you use a generator to cache function results?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How do you use the datetime module to get the current date?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What is the purpose of the ____call____ method?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use a generator to cache function results?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "Explain the difference between @staticmethod and @classmethod in Python.",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How do you use the itertools module to create combinations of a list?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How do you use a generator to serialize a dictionary?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the output of the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the purpose of the ____getitem____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between __init__ and __new__ in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What exception is raised by the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the purpose of the ____getitem____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the purpose of the ____call____ method?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "Explain the difference between deep copy and shallow copy in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How do you use a generator to get the current date?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the output of the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "Explain the difference between __init__ and __new__ in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____str____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the purpose of the ____str____ method?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How do you use the itertools module to create combinations of a list?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use a generator to get the current date?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the purpose of the ____exit____ method?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use a generator to serialize a dictionary?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What exception is raised by the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How do you use the datetime module to get the current date?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What is the purpose of the ____call____ method?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the purpose of the ____next____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between __init__ and __new__ in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the purpose of the ____exit____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use a generator to cache function results?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How do you use a generator to find all words in a string?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use a generator to get the current date?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use a generator to cache function results?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use the datetime module to get the current date?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the purpose of the ____next____ method?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the itertools module to create combinations of a list?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the purpose of the ____setitem____ method?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the purpose of the ____exit____ method?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What is the output of the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the purpose of the ____str____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How do you use the itertools module to create combinations of a list?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the purpose of the ____next____ method?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between @staticmethod and @classmethod in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the purpose of the ____str____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How do you use a generator to get the current date?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "Explain the difference between @staticmethod and @classmethod in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How do you use a generator to cache function results?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "Explain the difference between __init__ and __new__ in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between deep copy and shallow copy in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How can you optimize the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "Explain the difference between list comprehension and generator expression in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use a generator to list files in a directory?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the purpose of the ____call____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\nprint(type(lambda x: x))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How can you optimize the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "Explain the difference between property and attribute in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____setitem____ method?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How would you implement a context manager for temporary files?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the purpose of the ____setitem____ method?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use a generator to serialize a dictionary?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What exception is raised by the following code?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use the json module to serialize a dictionary?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the purpose of the ____setitem____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What does the following decorator do?\ndef f():\n    yield from range(2)\nprint(list(f()))",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What exception is raised by the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "Explain the difference between @staticmethod and @classmethod in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the purpose of the ____iter____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the functools module to cache function results?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "Explain the difference between deep copy and shallow copy in Python.",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the output of the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between @staticmethod and @classmethod in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What is the output of the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between deep copy and shallow copy in Python.",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How would you implement a context manager for database connections?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "What is the output of the following code?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the purpose of the ____exit____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nd = {'a': 1, 'b': 2}\nprint(list(d.keys()))",
+    "answer": "['a', 'b']"
+  },
+  {
+    "question": "What is the purpose of the ____next____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What exception is raised by the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between __init__ and __new__ in Python.",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the purpose of the ____exit____ method?",
+    "answer": "A decorator modifies the behavior of a function or method."
+  },
+  {
+    "question": "How would you implement a context manager for thread synchronization?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "How do you use the collections module to use a Counter to count elements?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How do you use the re module to find all words in a string?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "A context manager handles setup and cleanup actions using __enter__ and __exit__."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "What does the following decorator do?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What exception is raised by the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "[0, 2, 4]"
+  },
+  {
+    "question": "Explain the difference between tuple and list in Python.",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "How do you use the os module to list files in a directory?",
+    "answer": "The __str__ method returns a user-friendly string representation."
+  },
+  {
+    "question": "How would you implement a context manager for resource cleanup?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "What is the result of this list comprehension?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "A generator yields values one at a time and maintains state between yields."
+  },
+  {
+    "question": "What is the purpose of the ____getitem____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What does the following decorator do?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the purpose of the ____next____ method?",
+    "answer": "The __call__ method makes an instance callable like a function."
+  },
+  {
+    "question": "How can you optimize the following code?\nprint([x for x in range(5) if x % 2 == 0])",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "What is the purpose of the ____enter____ method?",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "Explain the difference between deep copy and shallow copy in Python.",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What exception is raised by the following code?\ntry:\n    1/0\nexcept Exception as e:\n    print(type(e))",
+    "answer": "<class 'ZeroDivisionError'>"
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "How do you use a generator to use a Counter to count elements?",
+    "answer": "ZeroDivisionError is raised when dividing by zero."
+  },
+  {
+    "question": "How do you use a generator to create combinations of a list?",
+    "answer": "@staticmethod does not access class or instance, @classmethod gets the class as first argument."
+  },
+  {
+    "question": "How would you implement a context manager for file handling?",
+    "answer": "A deep copy copies nested objects, a shallow copy only top-level references."
+  },
+  {
+    "question": "Explain the difference between set and frozenset in Python.",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
+  },
+  {
+    "question": "What is the result of this list comprehension?\nprint(type(lambda x: x))",
+    "answer": "<class 'function'>"
+  },
+  {
+    "question": "What is the purpose of the ____repr____ method?",
+    "answer": "The re.findall function returns all non-overlapping matches of a pattern."
+  },
+  {
+    "question": "What is the output of the following code?\na = [i**2 for i in range(3)]\nprint(a)",
+    "answer": "[0, 1, 4]"
+  },
+  {
+    "question": "How can you optimize the following code?\nprint(type(lambda x: x))",
+    "answer": "The collections.Counter counts hashable objects in an iterable."
   }
 ]
